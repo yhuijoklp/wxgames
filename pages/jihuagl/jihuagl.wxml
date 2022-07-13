@@ -1,0 +1,57 @@
+<!--pages/yunshugl/yunshugl.wxml-->
+<view class="container">
+    <view class="main_wrap">
+        <view class="ban_nav" wx:if="{{navshow}}">
+            <block wx:for="{{headlist}}" wx:for-index="index" wx:key="index">
+                <view class="subnav {{item.state ? 'nav_active' : ''}}" bindtap="navclick" data-state="{{item.title}}"
+                    data-index="{{index}}">
+                    {{item.title}}
+                </view>
+            </block>
+        </view>
+        <view class="banner">
+            <view class="ban_picker">
+                <view class="list_picker">
+                    <picker mode="date" value="{{date}}" fields="month" start="2015-01" end="2030-12" bindchange="bindDateChange">
+                        <view class="picker_wrap">
+                            <view class="picker" wx:if="{{date}}">{{date}}</view>
+                            <view class="picker picker2" wx:else>请选择月份</view>
+                            <view class="bom_img"><image mode="widthFix" src="/images/bottom.png"></image></view>
+                        </view>
+                    </picker>
+                </view>
+            </view>
+            <view class="ban_input" wx:if="{{!addshow}}">
+                <view class="search">
+                    <input placeholder="请输入关键字" value="{{titleInput}}" bindinput="inputClick" />
+                </view>
+                <view class="ser_img" bindtap="searchClick">
+                    <image mode="widthFix" src="/images/search.png" />
+                </view>
+            </view>
+
+            <view class="banner_title" wx:for="{{indexListx}}" wx:key="index">
+                <navigator open-type="navigate" url="{{navurl}}{{item.id}}">
+                    <view class="titles">
+                        <view class="text">
+                            <text>{{item.item1}}</text>
+                        </view>
+                    </view>
+                    <view class="con_wrap">
+                        <view class="con_wrap_left">
+                            <text>月计划产生量:{{item.rjhcsl}}</text>
+                        </view>
+                        <view class="con_wrap_midd">
+                            <text>月份：{{item.tbDate}}</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<view class="fixed" wx:if="{{addshow}}">
+    <navigator open-type="navigate" url="/pages/jihuatb/jihuatb">+ 添加</navigator>
+</view>

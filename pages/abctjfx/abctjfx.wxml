@@ -1,0 +1,50 @@
+<!--pages/abctjfx/abctjfx.wxml-->
+<view class="container">
+  <view class="main_wrap">
+    <view class="head">
+        <view class="title">
+            <view></view>
+            <text>统计总数量</text>
+        </view>
+        <view class="nav_box">
+            <view class="box">
+                <view class="box_block box1"></view>
+                <text class="tex1">{{csl}}</text>
+                <view class="box_tit tit1">企业产生量总数</view>
+            </view>
+            <view class="box">
+                <view class="box_block box2"></view>
+                <text class="tex2">{{lyl}}</text>
+                <view class="box_tit tit2">企业利用量总数</view>
+            </view>
+            <view class="box">
+                <view class="box_block box3"></view>
+                <text class="tex3">{{czl}}</text>
+                <view class="box_tit tit3">企业处置量总数</view>
+            </view>
+        </view>
+    </view>
+    <view class="banner">
+        <view class="ban_input">
+            <view class="search">
+                <input placeholder="请输入关键字" value="{{titleInput}}" bindinput="inputClick" />
+            </view>
+            <view class="ser_img" bindtap="searchClick">
+                <image mode="widthFix" src="/images/search.png" />
+            </view>
+        </view>
+    </view>
+    <view class="main">
+        <view class="main_name" wx:for="{{indexListx}}" wx:key="index">
+            <navigator open-type="navigate" url="/pages/abctjfxs/abctjfxs?id={{item.id}}">
+                <view class="titles">
+                    <view class="text">
+                        <text>{{item.qyName}}</text>
+                    </view>
+                    <view class="box_img2"><image mode="heightFix" src="/images/right.png"></image></view>
+                </view>
+            </navigator>
+        </view>
+    </view>
+  </view>
+</view>

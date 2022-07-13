@@ -1,0 +1,84 @@
+
+/**login.wxss**/
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #00ce9f;
+}
+.back_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.back_img {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+}
+.back_img image {
+  width: 100%;
+  display: block;
+}
+.head {
+  position: absolute;
+  width: 84%;
+  height: 720rpx;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 9;
+}
+.title {
+  font-size: 48rpx;
+  /* font-weight: 600; */
+  color: white;
+  margin-bottom: 12rpx;
+  line-height: 80rpx;
+  margin-bottom: 120rpx;
+  text-align: center;
+}
+.input_wrap {
+  width: 100%;
+  height: 80rpx;
+  background-color: white;
+  border-radius: 40rpx;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  margin-bottom: 40rpx;
+}
+.input_img {
+  width: 100rpx;
+  height: 54rpx;
+  margin-left: 12rpx;
+  /* margin-right: 10rpx; */
+}
+.input_img image {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}
+.input {
+  height: 100%;
+  width: 480rpx;
+}
+.input input {
+  height: 100%;
+  width: 100%;
+  font-size: 32rpx;
+}
+.button {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #00ce9f;
+  background-color: white;
+  border-radius: 40rpx;
+  text-align: center;
+  font-weight: 550;
+  font-size: 36rpx;
+}

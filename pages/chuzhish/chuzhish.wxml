@@ -1,0 +1,92 @@
+<!--pages/addyunshu/addyunshu.wxml-->
+<view class="container">
+  <view class="main_wrap">
+    <view class="list_wrap">
+        <view class="list">
+            <view class="list_text">企业名称：</view>
+            <view class="list_input">
+                <input type="text" placeholder="请输入企业名称" disabled="true" value="{{qyName}}" bindinput="getqyName" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">地址：</view>
+            <view class="list_input">
+                <input type="text" placeholder="请输入地址" disabled="true" value="{{addr}}" bindinput="getaddr" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">法人：</view>
+            <view class="list_input">
+                <input type="text" placeholder="请输入法人" disabled="true" value="{{faren}}" bindinput="getfaren" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">负责人：</view>
+            <view class="list_input">
+                <input type="text" placeholder="请输入负责人" disabled="true" value="{{fuzeren}}" bindinput="getfuzeren" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">联系方式：</view>
+            <view class="list_input">
+                <input type="number" placeholder="请输入联系方式" disabled="true" value="{{phone}}" bindinput="getphone" />
+            </view>
+        </view>
+        <view class="list_area">
+            <view class="list_texts">合作协议（照片）</view>
+            <view class="list_inputs">
+                <view class="body_file">
+                    <view class="file_wrap" wx:for="{{topTitle}}" wx:key="index" wx:for-index="index">
+                        <view class="file">
+                            <view class="file_img" bindtap="chechImg" data-index="{{index}}">
+                                <image mode="aspectFill" src="{{appAjaximg+item}}"/>
+                            </view>
+                            <!-- <view class="file_cha" bindtap="removeImg" data-index="{{index}}">
+                                <image mode="scaleToFill" src="/images/cha.png"/>
+                            </view> -->
+                        </view>
+                    </view>
+
+                    <!-- <view class="file_wrap">
+                        <view class="file" bindtap="fileImg">
+                        <view class="file_img2">
+                            <image mode="widthFix" src="/images/jia.png" />
+                        </view>
+                        <view class="add_img">添加图片</view>
+                        </view>
+                    </view> -->
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="list_wrap list_wrap2" wx:if="{{thyybox}}">
+        <view class="list_area">
+            <view class="list_texts">退回原因：</view>
+            <view class="list_inputs">
+              <text class="areatext">{{thyy}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="footbut">
+        <!-- <view class="foot_left" wx:if="{{weish}}" bindtap="submitClick">通过</view>
+        <view class="foot_left foot_remo" wx:if="{{weish}}" bindtap="removeClick">退回</view> -->
+        <!-- <view class="foot_left foot_right" bindtap="returnClick">返回</view> -->
+    </view>
+  </view>
+</view>
+
+<view class="fixedtui" wx:if="{{tuibox}}"></view>
+<view class="tui_wrap {{tuibox == true ? 'tuiheig' : ''}}">
+    <view class="tui_area">
+        <view class="tui_texts">退回原因：</view>
+        <view class="tui_inputs">
+            <textarea placeholder="请填写" value="{{thyy}}" bindinput="getthyy"></textarea>
+        </view>
+    </view>
+    <view class="tui_but">
+        <view class="cancel" bindtap="cancel">取消</view>
+        <view class="confirm" bindtap="confirm">确定</view>
+    </view>
+</view>
+
+

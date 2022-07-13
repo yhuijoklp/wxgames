@@ -1,0 +1,8 @@
+{
+    "navigationBarTitleText": "发车单识别",
+    "disableScroll": true,
+    "backgroundColor": "#292929",
+    "usingComponents": {
+        "image-cropper": "/component/image-cropper/image-cropper"
+    }
+}

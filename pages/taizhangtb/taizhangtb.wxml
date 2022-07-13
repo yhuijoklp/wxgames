@@ -1,0 +1,111 @@
+<!--pages/taizhangtb/taizhangtb.wxml-->
+<view class="container">
+  <view class="main_wrap">
+    <view class="list_wrap">
+        <view class="list">
+            <view class="list_text3">日期：</view>
+            <view class="weui-cells">
+                <radio-group bindchange="radioChange">
+                    <label class="weui-cell">
+                        <view class="weui-cell_hd">
+                            <radio value="day" checked="true" color="#00ce9f" />
+                        </view>
+                        <view class="weui-cell_bd">天</view>
+                    </label>
+                    <label class="weui-cell">
+                        <view class="weui-cell_hd">
+                            <radio value="month" color="#00ce9f" />
+                        </view>
+                        <view class="weui-cell_bd">月</view>
+                    </label>
+                </radio-group>
+            </view>
+            <view class="list_input3">
+                <picker mode="date" fields="{{dateType}}" value="{{date}}" start="2015-01-01" end="2030-12-31" bindchange="bindDateChange">
+                    <view class="picker_wrap">
+                        <view class="picker" wx:if="{{date}}">{{date}}</view>
+                        <view class="picker picker2" wx:else>{{xuanze}}</view>
+                        <view class="bom_img"><image mode="widthFix" src="/images/bottom.png"></image></view>
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">固废名称：</view>
+            <view class="list_input">
+                <input  value="{{gfmc}}" placeholder="请输入固废名称" bindinput="getgfmc" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">产生数量：</view>
+            <view class="list_input">
+                <input type="digit" value="{{cssl}}" placeholder="请输入数量" bindinput="getcssl" />
+            </view>
+        </view>
+        <view class="list" wx:for="{{cph_arr}}" wx:for-item="item" wx:key="index">
+            <view class="list_text">车牌号:
+            </view>
+            <view class="list_input">
+            
+                <input wx:if="{{index == 0 }}"  value="{{item}}" placeholder="请输入车牌号" data-index="{{index}}" bindinput="getcph" />
+                <input  wx:else class=" f_left"  value="{{item}}" placeholder="请输入车牌号" data-index="{{index}}" bindinput="getcph" />
+                <image class="del" src="/images/del.png" bindtap="del_cpinput"  data-index="{{index}}" wx:if="{{index != 0}}"></image>
+            </view>
+        </view>
+        <view class="list">
+            <image class="add_cp" src="/images/jia2.png" bindtap="add_cpinput"></image>
+        </view>
+
+        <view class="list">
+            <view class="list_text">委托利用数量：</view>
+            <view class="list_input">
+                <input type="digit" value="{{wtlysl}}" placeholder="请输入数量" bindinput="getwtlysl" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">委托处置数量：</view>
+            <view class="list_input">
+                <input type="digit" value="{{wtczsl}}" placeholder="请输入数量" bindinput="getwtczsl" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">自行利用数量：</view>
+            <view class="list_input">
+                <input type="digit" value="{{zxlysl}}" placeholder="请输入数量" bindinput="getzxlysl" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">自行处置数量：</view>
+            <view class="list_input">
+                <input type="digit" value="{{zxczsl}}" placeholder="请输入数量" bindinput="getzxczsl" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">剩余贮存数量：</view>
+            <view class="list_input">
+                <input type="digit" value="{{syccsl}}" placeholder="请输入数量" bindinput="getsyccsl" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">填表人：</view>
+            <view class="list_input">
+                <input type="text" value="{{tbr}}" placeholder="请输入填表人" bindinput="gettbr" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">发车次数：</view>
+            <view class="list_input">
+                <input type="number" value="{{fccs}}" placeholder="请输入次数" bindinput="getfccs" />
+            </view>
+        </view>
+        <view class="list_area">
+            <view class="list_texts">备注：</view>
+            <view class="list_inputs">
+              <textarea value="{{bz}}" placeholder="请填写" bindinput="getbz"></textarea>
+            </view>
+        </view>
+    </view>
+    <view class="footbut" bindtap="submitClick">提交</view>
+  </view>
+</view>
+

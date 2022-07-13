@@ -1,0 +1,46 @@
+<!--pages/yunshugl/yunshugl.wxml-->
+<view class="container">
+    <view class="main_wrap">
+        <view class="ban_nav" wx:if="{{navshow}}">
+            <block wx:for="{{headlist}}" wx:for-index="index" wx:key="index">
+                <view class="subnav {{item.state ? 'nav_active' : ''}}" bindtap="navclick" data-state="{{item.title}}"
+                    data-index="{{index}}">
+                    {{item.title}}
+                </view>
+            </block>
+        </view>
+        <view class="banner">
+            <view class="ban_input">
+                <view class="search">
+                    <input placeholder="请输入固废名称关键字" value="{{titleInput}}" bindinput="inputClick" />
+                </view>
+                <view class="ser_img" bindtap="searchClick">
+                    <image mode="widthFix" src="/images/search.png" />
+                </view>
+            </view>
+
+            <view class="banner_title" wx:for="{{indexListx}}" wx:key="index">
+                <navigator open-type="navigate" url="{{navurl}}{{item.id}}">
+                    <view class="titles">
+                        <view class="text">
+                            <text>运输单位：{{item.ysdw}}</text>
+                        </view>
+                    </view>
+                    <view class="con_wrap">
+                        <view class="con_wrap_left">
+                            <text>固废名称：{{item.gfName}}</text>
+                        </view>
+                        <view class="con_wrap_midd">
+                            <text>固废重量：{{item.weight}}</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<view class="fixed" wx:if="{{addshow}}">
+    <navigator open-type="navigate" url="/pages/addfache/addfache">+ 添加</navigator>
+</view>

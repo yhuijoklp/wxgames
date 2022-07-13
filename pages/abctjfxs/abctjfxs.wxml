@@ -1,0 +1,29 @@
+<!--pages/abctjfxs/abctjfxs.wxml-->
+<view class="container">
+  <view class="main_wrap">
+    <view class="ban_picker">
+        <view class="list_picker">
+            <picker mode="date" fields="month" value="{{date}}" start="2015-01" end="2025-12" bindchange="bindDateChange">
+                <view class="picker_wrap">
+                    <view class="picker" wx:if="{{date}}">{{date}}</view>
+                    <view class="picker picker2" wx:else>请选择日期</view>
+                    <view class="bom_img"><image mode="widthFix" src="/images/bottom.png"></image></view>
+                </view>
+            </picker>
+        </view>
+    </view>
+    <view class="head">
+        <view class="title">
+            <view></view>
+            <text>统计数量</text>
+        </view>
+        <view>
+            <view class='radar' style="width: 100%; height: 500rpx;">
+                <ec-canvas id="mychart-dom-radar" canvas-id='mychart-line' ec="{{ecline}}" bind:init="echartInit"></ec-canvas>
+            </view>
+        </view>
+    </view>
+  </view>
+</view>
+
+

@@ -1,0 +1,155 @@
+/* pages/taizhangtb/taizhangtb.wxss */
+.main_wrap {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 20rpx;
+    padding-bottom: 40rpx;
+}
+.list_wrap {
+    width: 100%;
+    padding: 0 20rpx;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 8rpx;
+}
+.list {
+    width: 100%;
+    padding: 0 6rpx;
+    display: flex;
+    height: 88rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+}
+.list_text {
+    width: 280rpx;
+    font-size: 32rpx;
+    color: black;
+}
+.list_input {
+    width: 360rpx;
+    height: 100%;
+}
+.picker_wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list_input picker {
+    width: 100%;
+    height: 100%;
+}
+.list_input .picker {
+    width: 88%;
+    height: 100%;
+    line-height: 88rpx;
+    text-align: right;
+    color: #333333;
+    font-size: 32rpx;
+}
+.list_input .picker2 {
+    color: #888888;
+}
+.bom_img {
+    width: 36rpx;
+    padding-top: 36rpx;
+}
+.bom_img image {
+    width: 100%;
+    display: block;
+}
+.list_input input {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 32rpx;
+    color: #333;
+}
+.list_texts {
+    line-height: 80rpx;
+    width: 100%;
+    padding: 0 6rpx;
+    box-sizing: border-box;
+}
+.list_inputs {
+    width: 100%;
+    height: 180rpx;
+    padding: 0 10rpx 24rpx;
+    box-sizing: border-box;
+}
+.list_inputs textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 32rpx;
+    color: #333;
+}
+
+.footbut {
+    width: 100%;
+    height: 80rpx;
+    background-color: #00ce9f;
+    line-height: 80rpx;
+    color: white;
+    border-radius: 40rpx;
+    text-align: center;
+    font-weight: 550;
+    font-size: 36rpx;
+    margin-top: 100rpx;
+}
+.list_input3 {
+    width: 240rpx;
+    height: 100%;
+}
+.list_input3 picker {
+    width: 100%;
+    height: 100%;
+}
+.list_input3 .picker {
+    width: 88%;
+    height: 100%;
+    line-height: 88rpx;
+    text-align: right;
+    color: #333333;
+    font-size: 32rpx;
+}
+.list_input3 .picker2 {
+    color: #888888;
+}
+.list_text3 {
+    width: 120rpx;
+    font-size: 32rpx;
+    color: black;
+}
+.weui-cells {
+    width: 240rpx;
+    height: 100%;
+}
+radio-group {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+.weui-cell {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin-right: 24rpx;
+    font-size: 32rpx;
+}
+.add_cp {
+    width: 16px;
+    height: 16px;
+    vertical-align:middle ;
+}
+.del {
+    float: right;
+    width: 16px;
+    height: 16px;
+    margin-top: 3px
+}
+.f_left {
+    width: 80%  !important;
+    float: left;
+}

@@ -1,0 +1,48 @@
+
+.hint {
+    position: absolute;
+    top: 16rpx;
+    width: 100%;
+    font-size: 34rpx;
+    line-height: 40rpx;
+    text-align: center;
+    color: white;
+    z-index: 10;
+}
+.bottom {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    height: 290rpx;
+    padding: 20rpx 40rpx 50rpx;
+    box-sizing: border-box;
+    background-color: black;
+}
+.bombut {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20rpx;
+}
+.bombut button {
+    font-size: 32rpx;
+    z-index: 2;
+    padding: 0 !important;
+    margin: 0 !important;
+    height: 60rpx;
+    line-height: 60rpx;
+    width: 140rpx !important;
+}
+.bomview {
+    color: white;
+    font-size: 30rpx;
+}
+.bomview2 {
+    width: 140rpx;
+}
+.bombut .lvback {
+    background-color: #00ce9f;
+    color: white;
+}
