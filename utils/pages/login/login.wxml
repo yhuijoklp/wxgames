@@ -1,0 +1,18 @@
+<!--login.wxml-->
+<view class="container">
+  <view class="back_wrap">
+    <view class="back_img"><image mode="widthFix" src="/images/back.jpg"></image></view>
+    <view class="head">
+      <view class="title">镇海区大宗固废服务监管平台</view>
+      <view class="input_wrap">
+        <view class="input_img"><image mode="heightFix" src="/images/name.png"></image></view>
+        <view class="input"><input type="text" value="{{username}}" placeholder="请输入账号" bindinput="getUser" /></view>
+      </view>
+      <view class="input_wrap">
+        <view class="input_img"><image mode="heightFix" src="/images/pass.png"></image></view>
+        <view class="input"><input type="text" value="{{password}}" password="true" placeholder="请输入密码" bindinput="getPass" /></view>
+      </view>
+      <view class="button" bindtap="joinclick">登录</view>
+    </view>
+  </view>
+</view>

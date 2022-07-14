@@ -1,0 +1,129 @@
+/* pages/qyinfotb/qyinfotb.wxss */
+/* pages/taizhangtb/taizhangtb.wxss */
+.main_wrap {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 20rpx;
+    padding-bottom: 40rpx;
+}
+.list_wrap {
+    width: 100%;
+    padding: 0 20rpx;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 8rpx;
+}
+.list_wrap2 {
+  padding: 0 20rpx 10rpx;
+  margin-top: 20rpx;
+}
+.list {
+    width: 100%;
+    padding: 0 6rpx;
+    display: flex;
+    height: 88rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+}
+.list_text {
+    width: 240rpx;
+    font-size: 32rpx;
+    color: black;
+}
+.list_input {
+    width: 400rpx;
+    height: 100%;
+}
+.picker_wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list_input picker {
+    width: 100%;
+    height: 100%;
+}
+.list_input .picker {
+    width: 88%;
+    height: 100%;
+    line-height: 88rpx;
+    text-align: right;
+    color: #333333;
+    font-size: 32rpx;
+}
+.list_input .picker2 {
+    color: #888888;
+}
+.bom_img {
+    width: 10%;
+    padding-top: 36rpx;
+}
+.bom_img image {
+    width: 100%;
+    display: block;
+}
+.list_input input {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 32rpx;
+    color: #333;
+}
+.list_texts {
+    line-height: 80rpx;
+    width: 100%;
+    padding: 0 6rpx;
+    box-sizing: border-box;
+}
+.list_inputs {
+    width: 100%;
+    height: auto;
+    padding: 0 10rpx 24rpx;
+    box-sizing: border-box;
+}
+.list_inputs textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 32rpx;
+    color: #333;
+}
+.list_inputs .areatext {
+    display: block;
+    height: 100rpx;
+    padding: 0 10rpx;
+    font-size: 32rpx;
+    color: #666666;
+}
+
+.footbut {
+    width: 100%;
+    height: 80rpx;
+    font-weight: 550;
+    margin-top: 100rpx;
+    display: flex;
+    justify-content: space-around;
+}
+.footbut .foot_left {
+  height: 100%;
+  width: 40%;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  color: white;
+  border-radius: 40rpx;
+  text-align: center;
+  background-color: #00ce9f;
+}
+.footbut .foot_right {
+    background-color: #f1f1f1;
+    color: #00ce9f;
+    border: 2rpx solid #00ce9f;
+  /* background-color: #00ce9f;
+  color: white; */
+}
+.footbut .foot_remo {
+  background-color: #f85347;
+  color: white;
+}

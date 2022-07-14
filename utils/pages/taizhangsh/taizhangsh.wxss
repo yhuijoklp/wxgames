@@ -1,0 +1,263 @@
+/* pages/addyunshu/addyunshu.wxss */
+.main_wrap {
+    width: 96%;
+    margin: 0 auto;
+    padding-top: 20rpx;
+    padding-bottom: 80rpx;
+}
+.list_wrap {
+    width: 100%;
+    padding: 0 20rpx;
+    background-color: white;
+    box-sizing: border-box;
+    border-radius: 8rpx;
+}
+.list_wrap2 {
+  padding: 0 20rpx 10rpx;
+  margin-top: 20rpx;
+}
+.list {
+    width: 100%;
+    padding: 0 6rpx;
+    display: flex;
+    height: 88rpx;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #eeeeee;
+}
+.list_text {
+    width: 240rpx;
+    font-size: 32rpx;
+    color: black;
+}
+.list_input {
+    width: 400rpx;
+    height: 100%;
+}
+.picker_wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.list_input picker {
+    width: 100%;
+    height: 100%;
+}
+.list_input .picker {
+    width: 88%;
+    height: 100%;
+    line-height: 88rpx;
+    text-align: right;
+    color: #333333;
+    font-size: 32rpx;
+}
+.list_input .picker2 {
+    color: #888888;
+}
+.bom_img {
+    width: 36rpx;
+    padding-top: 36rpx;
+}
+.bom_img image {
+    width: 100%;
+    display: block;
+}
+.list_input input {
+    width: 100%;
+    height: 100%;
+    text-align: right;
+    font-size: 32rpx;
+    color: #333;
+}
+.list_texts {
+    line-height: 80rpx;
+    width: 100%;
+    padding: 0 6rpx;
+    box-sizing: border-box;
+}
+.list_inputs {
+    width: 100%;
+    height: 180rpx;
+    padding: 0 6rpx 20rpx;
+    box-sizing: border-box;
+}
+.list_inputs textarea {
+    width: 100%;
+    height: 100%;
+    font-size: 32rpx;
+    color: #333;
+}
+.list_inputs2 {
+  width: 100%;
+  height: auto;
+  padding: 0 6rpx 20rpx;
+  box-sizing: border-box;
+}
+.list_inputs2 .areatext {
+    display: block;
+    height: auto;
+    padding: 0 10rpx;
+    font-size: 32rpx;
+    color: #666666;
+    line-height: 44rpx;
+}
+.list_inputs2 .areatext2 {
+    display: block;
+    height: auto;
+    padding-bottom: 10rpx;
+    font-size: 32rpx;
+    color: #333;
+    line-height: 44rpx;
+}
+
+.footbut {
+    width: 100%;
+    height: 80rpx;
+    font-weight: 550;
+    margin-top: 100rpx;
+    display: flex;
+    justify-content: space-around;
+}
+.footbut .foot_left {
+  height: 100%;
+  width: 40%;
+  font-size: 36rpx;
+  line-height: 80rpx;
+  color: white;
+  border-radius: 40rpx;
+  text-align: center;
+  background-color: #00ce9f;
+}
+.footbut .foot_right {
+  /* background-color: white;
+  color: #00ce9f; */
+  background-color: #00ce9f;
+  color: white;
+}
+.footbut .foot_remo {
+  background-color: #f85347;
+  color: white;
+}
+
+.body_file {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+  }
+  .file_wrap {
+    width: 144rpx;
+    margin: 0 10rpx 20rpx;
+  }
+  .file {
+    width: 100%;
+    height: 144rpx;
+    position: relative;
+    background-color: rgb(246,246,246);
+  }
+  .file_img {
+    width: 100%;
+    height: 100%;
+  }
+  .file_img image {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  .file_img2 {
+    width: 80rpx;
+    padding-top: 10rpx;
+    margin: 0 auto 2rpx;
+  }
+  .file_img2 image {
+    width: 100%;
+    display: block;
+  }
+  .add_img {
+    font-size: 28rpx;
+    text-align: center;
+    color: #777777;
+  }
+  
+  .file_cha {
+    position: absolute;
+    width: 36rpx;
+    height: 36rpx;
+    top: -10rpx;
+    right: -10rpx;
+    border-radius: 50%;
+    background-color: white;
+  }
+  .file_cha image {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+  
+
+  .fixedtui {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.4);
+    z-index: 8;
+  }
+  .tui_wrap {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 0rpx;
+    width: 100%;
+    z-index: 9;
+    overflow: hidden;
+    background-color: white;
+    transition: all 500ms;
+  }
+  .tuiheig {
+    height: 600rpx;
+    transition: all 500ms;
+  }
+  .tui_area {
+    padding: 36rpx;
+  }
+  .tui_texts {
+    font-size: 40rpx;
+    line-height: 48rpx;
+    margin-bottom: 20rpx;
+    color: block;
+  }
+  .tui_inputs {
+    padding: 0 10rpx;
+  }
+  .tui_inputs textarea {
+    width: 100%;
+    font-size: 32rpx;
+    height: 200rpx;
+    color: #333333;
+  }
+  .tui_but {
+    width: 100%;
+    height: 100rpx;
+    line-height: 100rpx;
+    padding: 0 32rpx;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+  }
+  .cancel {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    background-color: #f1f1f1;
+    color: #999999;
+  }
+  .confirm {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    background-color: #00ce9f;
+    color: white;
+  }

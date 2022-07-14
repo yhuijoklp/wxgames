@@ -1,0 +1,92 @@
+/* pages/index/index.wxss */
+.head {
+  width: 100%;
+  position: relative;
+}
+.head_img {
+  width: 100%;
+}
+.head_img image {
+  width: 100%;
+  display: block;
+}
+.title {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  line-height: 60rpx;
+  font-size: 44rpx;
+  color: white;
+}
+.main {
+  width: 92%;
+  margin: 0 auto;
+  padding-bottom: 40rpx;
+  padding-top: 24rpx;
+}
+.banner {
+  width: 100%;
+  padding-left: 16rpx;
+  box-sizing: border-box;
+  line-height: 36rpx;
+  margin-bottom: 24rpx;
+  font-size: 32rpx;
+  display: flex;
+}
+.banner navigator {
+  width: 200rpx;
+  margin-left: 16rpx;
+  font-size: 32rpx;
+  color: #00ce9f;
+}
+.box_max {
+  width: 100%;
+  height: 160rpx;
+  margin-bottom: 20rpx;
+}
+.box_max navigator {
+  width: 100%;
+  height: 100%;
+}
+.box {
+  width: 100%;
+  height: 100%;
+  padding: 0 40rpx;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 8rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.box_wrap {
+  width: 84%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.box_text {
+  font-size: 36rpx;
+  font-weight: 500;
+}
+.box_img {
+  width: 72rpx;
+  height: 72rpx;
+  margin-right: 24rpx;
+}
+.box_img image {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.box_img2 {
+  width: 54rpx;
+  height: 54rpx;
+}
+.box_img2 image {
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+}

@@ -1,0 +1,54 @@
+<!--pages/yunshugl/yunshugl.wxml-->
+<view class="container">
+    <view class="main_wrap">
+        <view class="ban_nav" wx:if="{{navshow}}">
+            <block wx:for="{{headlist}}" wx:for-index="index" wx:key="index">
+                <view class="subnav {{item.state ? 'nav_active' : ''}}" bindtap="navclick" data-state="{{item.title}}"
+                    data-index="{{index}}">
+                    {{item.title}}
+                </view>
+            </block>
+        </view>
+        <view class="banner">
+            <view class="ban_input">
+                <view class="search">
+                    <input placeholder="请输入关键字" value="{{titleInput}}" bindinput="inputClick" />
+                </view>
+                <view class="ser_img" bindtap="searchClick">
+                    <image mode="widthFix" src="/images/search.png" />
+                </view>
+            </view>
+
+            <view class="banner_title" wx:for="{{indexListx}}" wx:key="index">
+                <navigator open-type="navigate" url="{{navurl}}{{item.id}}">
+                    <view class="titles">
+                        <view class="text">
+                            <text>{{item.qyName}}</text>
+                        </view>
+                    </view>
+                    <view class="titles2">
+                        <view class="text">
+                            <text>地址：{{item.addr}}</text>
+                        </view>
+                        
+                    </view>
+                    <view class="con_wrap">
+                        <view class="con_wrap_left">
+                            <text>法人:{{item.faren}}</text>
+                            <text>负责人:{{item.fuzeren}}</text>
+                        </view>
+                        <view class="con_wrap_midd">
+                            <text></text>
+                            <text>联系方式:{{item.phone}}</text>
+                        </view>
+                    </view>
+                </navigator>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+<view class="fixed" wx:if="{{addshow}}">
+    <navigator open-type="navigate" url="/pages/addchuzhi/addchuzhi">+ 添加</navigator>
+</view>

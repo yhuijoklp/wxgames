@@ -1,0 +1,66 @@
+<!--pages/addyunshu/addyunshu.wxml-->
+<view class="container">
+  <view class="main_wrap">
+    <view class="list_wrap">
+        <view class="list">
+            <view class="list_text">企业名称：</view>
+            <view class="list_input">
+                <input type="digit" disabled="true" value="{{qyName}}" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">月份：</view>
+            <view class="list_input">
+                <picker mode="date" fields="month" disabled="true" value="{{date}}" start="2015-01" end="2030-12" bindchange="bindDateChange">
+                    <view class="picker_wrap">
+                        <view class="picker" wx:if="{{date}}">{{date}}</view>
+                        <view class="picker picker2" wx:else>请选择月份</view>
+                        <view class="bom_img"><image mode="widthFix" src="/images/bottom.png"></image></view>
+                    </view>
+                </picker>
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">月计划产生量：</view>
+            <view class="list_input">
+                <input type="digit" disabled="true" value="{{rjhcsl}}" placeholder="请输入产生量" bindinput="getrjhcsl" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">月计划处置量：</view>
+            <view class="list_input">
+                <input type="digit" disabled="true" value="{{rjhczl}}" placeholder="请输入处置量" bindinput="getrjhczl" />
+            </view>
+        </view>
+    </view>
+    <view class="list_wrap list_wrap2" wx:if="{{thyybox}}">
+        <view class="list_area">
+            <view class="list_texts">退回原因：</view>
+            <view class="list_inputs2">
+              <text class="areatext">{{thyy}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="footbut">
+        <!-- <view class="foot_left" wx:if="{{weish}}" bindtap="submitClick">通过</view>
+        <view class="foot_left foot_remo" wx:if="{{weish}}" bindtap="removeClick">退回</view> -->
+        <!-- <view class="foot_left foot_right" bindtap="returnClick">返回</view> -->
+    </view>
+  </view>
+</view>
+
+<view class="fixedtui" wx:if="{{tuibox}}"></view>
+<view class="tui_wrap {{tuibox == true ? 'tuiheig' : ''}}">
+    <view class="tui_area">
+        <view class="tui_texts">退回原因：</view>
+        <view class="tui_inputs">
+            <textarea placeholder="请填写" value="{{thyy}}" bindinput="getthyy"></textarea>
+        </view>
+    </view>
+    <view class="tui_but">
+        <view class="cancel" bindtap="cancel">取消</view>
+        <view class="confirm" bindtap="confirm">确定</view>
+    </view>
+</view>
+
+

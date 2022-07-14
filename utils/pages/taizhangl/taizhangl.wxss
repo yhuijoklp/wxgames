@@ -1,0 +1,219 @@
+/* pages/yunshugl/yunshugl.wxss */
+
+.banner {
+    padding: 24rpx 24rpx 160rpx;
+  }
+  .banner_title {
+    width: 100%;
+    border-radius: 10rpx;
+    background-color: white;
+    margin-bottom: 24rpx;
+  }
+  .banner_title navigator {
+    width: 100%;
+    padding: 20rpx 24rpx 24rpx;
+    box-sizing: border-box;
+  }
+  .titles {
+    width: 100%;
+    font-size: 36rpx;
+    color: black;
+    margin-bottom: 16rpx;
+  }
+  .titles2 {
+    width: 100%;
+    font-size: 34rpx;
+    color: #444444;
+    line-height: 48rpx;
+    margin-bottom: 16rpx;
+  }
+  .titles .text {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .titles2 .text {
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .ban_nav {
+    width: 100%;
+    height: 100rpx;
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .subnav {
+    color: black;
+    font-size: 34rpx;
+    line-height: 60rpx;
+    border-bottom: 6rpx solid rgba(0,0,0,0);
+  }
+  .nav_active {
+    line-height: 60rpx;
+    border-bottom: 6rpx solid #00ce9f;
+  }
+  .ban_input {
+    margin-bottom: 24rpx;
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    height: 92rpx;
+    background-color: white;
+    border-radius: 46rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .search {
+    width: calc(100% - 100rpx)
+  }
+  .search input {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    outline: none;
+    background: none;
+  }
+  .ser_img {
+    width: 50rpx;
+  }
+  .ser_img image {
+    width: 100%;
+    display: block;
+  }
+
+  
+  .ban_picker {
+    margin-bottom: 24rpx;
+    width: 100%;
+    padding: 0 30rpx;
+    box-sizing: border-box;
+    height: 92rpx;
+    line-height: 92rpx;
+    background-color: white;
+    border-radius: 12rpx;
+    display: flex;
+    justify-content: space-between;
+  }
+  .weui-cells {
+    width: 240rpx;
+    height: 100%;
+  }
+  radio-group {
+      display: flex;
+      height: 100%;
+      align-items: center;
+  }
+  .weui-cell {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      margin-right: 24rpx;
+      font-size: 32rpx;
+  }
+  .list_picker {
+    width: 240rpx;
+    height: 100%;
+  }
+  .list_picker picker {
+    width: 100%;
+    height: 100%;
+  }
+  .picker_wrap {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+  .list_picker .picker {
+      width: 192rpx;
+      height: 100%;
+      color: #333333;
+      font-size: 32rpx;
+      text-align: right;
+  }
+  .list_picker .picker2 {
+      color: #888888;
+  }
+  .bom_img {
+      width: 40rpx;
+      padding-top: 36rpx;
+  }
+  .bom_img image {
+      width: 100%;
+      display: block;
+  }
+
+
+  .con_wrap {
+    display: flex;
+  }
+  .con_wrap text {
+    display: block;
+    line-height: 46rpx;
+    font-size: 32rpx;
+    color: #888888;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+  .con_wrap_left {
+    width: calc(50% - 2rpx);
+    border-right: 2rpx dashed #dddddd;
+  }
+  .con_wrap_midd {
+    width: 50%;
+    padding-left: 16rpx;
+    box-sizing: border-box;
+  }
+  .con_wrap_right {
+    width: calc(24% - 2rpx);
+    display: flex;
+    justify-content: space-between;
+  }
+  .deng_wrap {
+    width: 100rpx;
+    height: 100rpx;
+    border-radius: 10rpx;
+    background-color: #f5f5f5;
+  }
+  .deng_imgr {
+    background-color: rgb(255,229,229);
+  }
+  .deng_imgh {
+    background-color: rgb(253,249,236);
+  }
+  .deng_imgl {
+    background-color: rgb(240,249,244);
+  }
+  .deng_img {
+    width: 64rpx;
+    margin: 18rpx auto;
+  }
+  .deng_img image {
+    width: 100%;
+    display: block;
+  }
+  
+  
+  .fixed {
+    width: 100%;
+    height: 140rpx;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: white;
+  }
+  .fixed navigator {
+    width: 100%;
+    height: 100rpx;
+    text-align: center;
+    line-height: 100rpx;
+    font-size: 40rpx;
+    color: white;
+    background-color: #00ce9f;
+  }

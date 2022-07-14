@@ -1,0 +1,66 @@
+<!--pages/addyunshu/addyunshu.wxml-->
+<view class="container">
+  <view class="main_wrap">
+    <view class="list_wrap">
+        <view class="list">
+            <view class="list_text">企业名称：</view>
+            <view class="list_input">
+                <input type="text" placeholder="请输入企业名称" value="{{qyName}}" bindinput="getqyName" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">地址：</view>
+            <view class="list_input">
+                <input type="text" placeholder="请输入地址" value="{{addr}}" bindinput="getaddr" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">法人：</view>
+            <view class="list_input">
+                <input type="text" placeholder="请输入法人" value="{{faren}}" bindinput="getfaren" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">负责人：</view>
+            <view class="list_input">
+                <input type="text" placeholder="请输入负责人" value="{{fuzeren}}" bindinput="getfuzeren" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">联系方式：</view>
+            <view class="list_input">
+                <input type="number" placeholder="请输入联系方式" value="{{phone}}" bindinput="getphone" />
+            </view>
+        </view>
+        <view class="list_area">
+            <view class="list_texts">合作协议（上传照片）</view>
+            <view class="list_inputs">
+                <view class="body_file">
+                    <view class="file_wrap" wx:for="{{topTitle}}" wx:key="index" wx:for-index="index">
+                        <view class="file">
+                            <view class="file_img" bindtap="chechImg" data-index="{{index}}">
+                                <image mode="aspectFill" src="{{appAjaximg+item}}"/>
+                            </view>
+                            <view class="file_cha" bindtap="removeImg" data-index="{{index}}">
+                                <image mode="scaleToFill" src="/images/cha.png"/>
+                            </view>
+                        </view>
+                    </view>
+
+                    <view class="file_wrap">
+                        <view class="file" bindtap="fileImg">
+                        <view class="file_img2">
+                            <image mode="widthFix" src="/images/jia.png" />
+                        </view>
+                        <view class="add_img">添加图片</view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+    <view class="footbut" bindtap="submitClick">提交</view>
+  </view>
+</view>
+
+

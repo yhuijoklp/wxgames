@@ -1,0 +1,84 @@
+<!--pages/qyinfotb/qyinfotb.wxml-->
+<view class="container">
+  <view class="main_wrap">
+    <view class="list_wrap">
+        <view class="list">
+            <view class="list_text">企业名称：</view>
+            <view class="list_input">
+                <input type="text" disabled="{{submitbut}}" placeholder="请输入企业名称" value="{{qyName}}" bindinput="getqyName" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">地址：</view>
+            <view class="list_input">
+                <input type="text" disabled="{{submitbut}}" placeholder="请输入地址" value="{{addr}}" bindinput="getaddr" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">法人：</view>
+            <view class="list_input">
+                <input type="text" disabled="{{submitbut}}" placeholder="请输入法人" value="{{faren}}" bindinput="getfaren" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">负责人：</view>
+            <view class="list_input">
+                <input type="text" disabled="{{submitbut}}" placeholder="请输入负责人" value="{{fuzeren}}" bindinput="getfuzeren" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">联系方式：</view>
+            <view class="list_input">
+                <input type="number" disabled="{{submitbut}}" placeholder="请输入联系方式" value="{{phone}}" bindinput="getphone" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">产废环节：</view>
+            <view class="list_input">
+                <input type="text" disabled="{{submitbut}}" placeholder="请输入产废环节" value="{{huanjie}}" bindinput="gethuanjie" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">原辅料：</view>
+            <view class="list_input">
+                <input type="text" disabled="{{submitbut}}" placeholder="请输入原辅料" value="{{yfl}}" bindinput="getyfl" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">原辅料用量(吨):</view>
+            <view class="list_input">
+                <input type="digit" disabled="{{submitbut}}" placeholder="请输入原辅料用量" value="{{yl}}" bindinput="getyl" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">固废名称：</view>
+            <view class="list_input">
+                <input type="text" disabled="{{submitbut}}" placeholder="请输入固废名称" value="{{gfmc}}" bindinput="getgfmc" />
+            </view>
+        </view>
+        <view class="list">
+            <view class="list_text">固废年产量(吨):</view>
+            <view class="list_input">
+                <input type="digit" disabled="{{submitbut}}" placeholder="请输入固废年产量" value="{{ncl}}" bindinput="getncl" />
+            </view>
+        </view>
+    </view>
+    
+    <view class="list_wrap list_wrap2" wx:if="{{thyybox}}">
+        <view class="list_area">
+            <view class="list_texts">退回原因：</view>
+            <view class="list_inputs">
+              <text class="areatext">{{thyy}}</text>
+            </view>
+        </view>
+    </view>
+    <view class="footbut">
+        <view class="foot_left" wx:if="{{!submitbut}}" bindtap="submitl">提交</view>
+        <view class="foot_left" wx:else bindtap="xiugaiurl">修改</view>
+        <!-- <view class="foot_left foot_remo" wx:if="{{weish}}" bindtap="removeClick">退回</view> -->
+        <view class="foot_left foot_right" bindtap="returnClick">返回</view>
+    </view>
+  </view>
+</view>
+
+
